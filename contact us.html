@@ -1,0 +1,175 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--Font Awesome CDN-->
+    <script src="https://use.fontawesome.com/f9d4123c40.js"></script>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sumana:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="jumbotron jumbotron-fluid bg-header">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <a href="index.html"><img src="img/logo.png" class="img-fluid logo" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-md bg py-md-3 fixed-top shadow-sm p-3 mb-5 rounded">
+        <a class="navbar-brand ml-5" href="index.html">everless cafe</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=><i class="fa fa-bars"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav mt-2 ml-auto">
+
+                <li class="nav-item active mr-4">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mr-4">
+                    <a class="nav-link" href="index.html#menu">Menu</a>
+                </li>
+                <li class="nav-item mr-4">
+                    <a class="nav-link" href="#locHr">Hours</a>
+                </li>
+                <li class="nav-item mr-4">
+                    <a class="nav-link" href="#contactUs">Contact</a>
+                </li>
+                <li class="nav-item mr-4">
+                    <a class="nav-link" href="#locHr">Location</a>
+                </li>
+                <li class="nav-item d-md-none">
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                            class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                            class="fa fa-twitter"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mb-5 border-btm" id="locHr">
+        <div class="row">
+            <div class="col-12 text-center mt-5 mb-5">
+                <h1>Location</h1>
+            </div>
+            <div class="col-md-6 col-12 pb-5">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2815.8891241241217!2d-93.32267718458247!3d45.10831557909832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b33bc340a8d80f%3A0x6df3577810a674a!2sGoCha%20Teahouse!5e0!3m2!1sen!2sus!4v1637623283891!5m2!1sen!2sus"
+                    class="" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-md- col text-center my-auto pb-5">
+                <p><span class="header">Everless Cafe</span><br>
+                    Monday: Closed <br>
+                    Tue - Fri: 07:30 - 06:00 <br>
+                    Sat - Sun: 08:00 - 07:30</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-content pt-5">
+            <div class="col-12 mb-5">
+                <h2 id="contactUs">Contact Us</h2>
+            </div>
+            <div class="col-md-10">
+                <form>
+                    <div class="form-group row">
+                        <label for="firstName" class="col-md-2 col-form-label">Name *</label>
+                        <div class="col">
+                            <input type="text" class="form-control" id="firstName" name="firstName"
+                                placeholder="First Name" required />
+                        </div>
+
+                        <div class="col">
+                            <input type="text" class="form-control" id="lastName" name="lastName"
+                                placeholder="Last Name" required />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-md-2 col-form-label">Email Address *</label>
+                        <div class="col-md-10">
+                            <input type="email" class="form-control" id="email" name="email" required />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="subject" class="col-md-2 col-form-label">Subject *</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="subject" name="subject" required />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="message" class="col-md-2 col-form-label">Message *</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" id="feedback" name="message" rows="6"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                            <button type="submit" class="btn btn-outline-secondary btn-lg">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <footer class="p-2 bg-green text-white pb-5 pt-5">
+
+        <div class="text-center mt-4 mb-4">
+            <a href="#top" class="text-white"><i class="fa fa-angle-up"></i><br> TOP</a>
+        </div>
+        <div class="container-fluid pt-2">
+            <div class="row row-content align-items-center">
+                <div class="col-12 col-md-6 text-center mb-5">
+                    <img src="img/logo.png" class="img-fluid logo-btm">
+                </div>
+                <div class="col d-none d-md-inline-block">
+                    <ul class="list-unstyled text-left mt-4">
+                        <li class="d-inline-block">
+                            <h5>Everless Cafe</h5>
+                            <p class="text-white">
+                                2623 Logan Ave N <br>
+                                Minneapolis<br>
+                                Mon: Closed <br>
+                                Tue - Fri: 07:30 - 06:00 <br>
+                                Sat - Sun: 08:00 - 07:30
+                            </p>
+                        </li>
+                        <li class="align-top d-md-inline-block">
+                            <h5>Follow Us</h5>
+                            <a class="btn btn-social-icon btn-instagram text-white" href="http://instagram.com/"><i
+                                    class="fa fa-instagram"></i></a>
+                            <a class="btn btn-social-icon btn-facebook text-white" href="http://facebook.com/"><i
+                                    class="fa fa-facebook"></i></a>
+                            <a class="btn btn-social-icon btn-twitter text-white" href="http://twitter.com/"><i
+                                    class="fa fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

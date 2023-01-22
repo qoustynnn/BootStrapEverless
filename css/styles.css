@@ -1,0 +1,207 @@
+* {
+    font-family: 'Sumana', serif;
+    letter-spacing: 0.03em;
+    font-feature-settings: "palt";
+}
+
+body {
+    background-color: white;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.logo {
+    width: 100%;
+    max-width: 37.5rem;
+    height: auto;
+}
+
+.logo-btm {
+    width: 100%;
+    max-width: 25.5rem;
+    height: auto;
+}
+
+.navbar a {
+    color: #3F5037ff;
+}
+
+.bg {
+    background-color: rgba(255, 255, 255, 0.74);
+}
+
+h1, h2, p {
+    color: #3F5037ff;
+}
+
+#menu {
+    color: #f6bd60;
+    letter-spacing: 0.125em;
+    font-family: 'Cookie', cursive;
+    font-size: 3rem;
+}
+
+header nav {
+    font-size: large;
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 72px;
+        right: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+        height: 100vh;
+        transition: all 0.2s ease;
+        display: block;
+        background-color: inherit;
+    }
+
+    .navbar-collapse.collapsing {
+        margin-right: 50%;
+        transition: all 0.5s ease;
+        display: block;
+    }
+
+    .navbar-collapse.show {
+        right: 0;
+    }
+}
+
+.container-fluid {
+    padding: none;
+}
+
+.top-text {
+    text-shadow: 0 0 5px #000;
+
+}
+
+#top {
+    max-height: 93vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.164), rgba(56, 55, 55, 0.164)), url('../img/jonathan-borba-pIO8zFpgL_s-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.info-section {
+    min-height: 80vh;
+}
+
+.bg-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.bg-green {
+    background-color: #596847;
+    padding: 60px 0 30px 0;
+    margin-top: 6rem;
+    position: relative;
+}
+
+footer::before {
+    background-image: url('../img/object-footer-top.svg');
+    content: '';
+    position: absolute;
+    top: -24.4px;
+    height: 25px;
+    left: -0.0px;
+    width: 100%;
+    background-repeat: repeat-x;
+    background-size: auto 25px;
+    max-width: none;
+}
+
+footer {
+    height: 450px;
+}
+
+.fa-angle-up {
+    color: #fff;
+}
+
+.box {
+    box-shadow: -19px 19px 2px 1px #f6bd60;
+}
+
+@media(max-width:768px) {
+    .box {
+        box-shadow: 0px 1.5px 0px 15px #f6bd60;
+    }
+
+    .img-one, .img-two {
+        height: 300px;
+        width: auto;
+    }
+
+}
+
+.menu {
+    height: fit-content;
+    margin-bottom: 300px;
+}
+
+.form-control {
+    font-size: 13px;
+}
+
+.bg-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.164), rgba(56, 55, 55, 0.164)), url('../img/jonathan-borba-pIO8zFpgL_s-unsplash.jpg');
+    left: 0px;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+}
+
+@media (min-width: 576px) {
+    .jumbotron {
+        padding: 4rem 2rem;
+    }
+}
+
+.btn-instagram {
+    padding-left: 0;
+}
+
+.img-one {
+    background-image: url(../img/pexels-amar-preciado-9102653.jpg);
+}
+
+.img-one, .img-two {
+    background-position: center;
+    background-size: cover;
+    border-radius: 2px;
+}
+
+.img-two {
+    background-image: url(../img/pexels-rodnae-productions-6412830.jpg);
+}
+
+.header {
+    font-size: 1.125em;
+    text-decoration: underline 1.75px;
+    color: black;
+}
+
+.border-btm {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.267);
+}
